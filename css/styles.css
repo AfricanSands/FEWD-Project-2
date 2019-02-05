@@ -1,0 +1,125 @@
+/* global styling*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 1em/1.5 grey Helvetica;
+  text-align: center;
+  background: #f7f5f0;
+  border-left: solid firebrick 15px;
+  border-right: solid firebrick 15px;
+  margin: 0;
+  padding: 0;
+}
+
+/* link styling */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: firebrick;
+}
+
+a:visited {
+  color: darkgrey;
+}
+
+/*---------------------------Section Styling--------------------------*/
+/* Main Nav section styling*/
+.main-nav {
+  background-color: firebrick;
+  width: 100%;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  text-decoration: none;
+}
+
+.nav .name {
+  margin-right: auto;
+  display: block;
+  color: black;
+}
+
+.nav li {
+  padding: 5px 10px 10px;
+  text-decoration: none;
+}
+
+.nav a {
+  transition: all .5s;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.nav a:visited {
+  color: darkgrey;
+}
+
+/* Main Footer Styling*/
+
+footer {
+  background-color: firebrick;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+  font-size: 1em;
+  text-align: right;
+}
+
+footer .social {
+  float: left;
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
