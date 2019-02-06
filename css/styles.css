@@ -38,6 +38,7 @@ a:visited {
   padding: 10px;
   position: fixed;
   color: black;
+  margin: 0 auto;
 }
 
 .nav {
@@ -45,7 +46,7 @@ a:visited {
   justify-content: space-around;
   font-weight: bold;
   list-style-type: none;
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
   text-decoration: none;
 }
@@ -73,6 +74,40 @@ a:visited {
   color: darkgrey;
 }
 
+/* Header styling*/
+
+header {
+  text-align: left;
+  background-color: firebrick;
+  color: white;
+  height: 350px;
+  border-bottom: solid black 3px;
+  margin-top: 10px;
+}
+
+header .intro {
+  max-width: 450px;
+  color: white;
+  float: left;
+  margin: 50px;
+  padding: 50px;
+}
+
+header .profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: solid white 2px;
+  margin-top: 100px;
+  margin-right:200px;
+  margin-bottom: 100px;
+  transition: all .5s;
+  float: right;
+}
+
+header .profile-img:hover {
+  transform: scale(1.5);
+}
 /* Main Footer Styling*/
 
 footer {
@@ -81,6 +116,7 @@ footer {
   padding: 20px 0 40px 20px;
   font-size: 1em;
   text-align: right;
+  margin: auto;
 }
 
 footer .social {
@@ -94,9 +130,23 @@ footer .social {
 footer .copyright {
   top: -8px;
   font-size: .75em;
+  margin: 10px;
+  padding: 10px;
 }
 
-footer ul li {
+footer .nav {
+  float: right;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ footer ul li {
   display: inline-block;
 }
 
@@ -112,10 +162,10 @@ a.social {
 }
 
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(../images/linkedin.svg);
 }
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(../images/github.svg);
 }
 a.social:hover {
   opacity: 1;
@@ -123,3 +173,144 @@ a.social:hover {
 .clearfix {
   clear: both;
 }
+
+/*---------------other pages----------------*/
+/* Main Styling */
+
+.tag {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: solid firebrick 3px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+.location {
+  background-color: black;
+  color: white;
+}
+.card {
+  margin: auto;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-right: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card:hover {
+  border-color: firebrick;
+}
+
+.card_2 {
+  margin: 20px auto 40px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-right: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  line-height: 1.6em;
+}
+
+.card_2:hover {
+  border-color: firebrick;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: yellow;
+  color: firebrick;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: orange;
+}
+
+.tag {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: solid firebrick 3px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+.location {
+  background-color: black;
+  color: white;
+}
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-right: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card:hover {
+  border-color: firebrick;
+}
+
+.card_2 {
+  margin: 20px auto 40px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-right: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  line-height: 1.6em;
+}
+
+.card_2:hover {
+  border-color: firebrick;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: yellow;
+  color: firebrick;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: orange;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex;
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
