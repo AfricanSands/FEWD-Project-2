@@ -13,7 +13,6 @@ body {
   border-top: 0;
   margin: 0;
   padding: 0;
-  transform: none;
 }
 
 /* link styling */
@@ -40,7 +39,6 @@ a:visited {
   padding: 10px;
   position: fixed;
   color: black;
-  margin: 0;
 }
 
 .nav {
@@ -50,7 +48,6 @@ a:visited {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
-  text-decoration: none;
 }
 
 .nav .name {
@@ -82,9 +79,9 @@ header {
   text-align: left;
   background-color: firebrick;
   color: white;
-  height: 400px;
+  height: 350px;
   border-bottom: solid black 3px;
-  margin-top: 0;
+  padding-top: 60;
 }
 
 header .intro {
@@ -108,8 +105,17 @@ header .profile-img {
 }
 
 header .profile-img:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
+/* Secondary Content Styling*/
+
+.project9,
+.project6,
+.project3 {
+  float: left;
+  max-width: 25%;
+}
+
 /* Main Footer Styling*/
 
 footer {
@@ -117,7 +123,7 @@ footer {
   min-height: 30px;
   padding: 20px 0 40px 20px;
   font-size: 1em;
-  text-align: center;
+  text-align: right;
   margin: auto;
 }
 
@@ -132,8 +138,9 @@ footer .social {
 footer .copyright {
   top: -8px;
   font-size: .75em;
-  margin: 30px auto;
+  margin: 30px 42% 10px;
   padding: 10px;
+  text-align: center;
 }
 
 footer .nav {
