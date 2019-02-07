@@ -12,6 +12,7 @@ body {
   border-left: solid firebrick 15px;
   border-right: solid firebrick 15px;
   padding: 0;
+  color: grey;
 }
 
 /* link styling */
@@ -38,10 +39,13 @@ h2 {
   margin: 5px 42.5% 5px;
   font-size: bold;
   text-align: center;
+  color: black;
 }
 
 h4 {
+font-family: 'Marvel', 'Cousine', sans-serif;
   text-decoration: underline;
+  color: black;
 }
 /*---------------------------Section Styling--------------------------*/
 /* Main Nav section styling*/
@@ -99,10 +103,10 @@ header {
 
 header .intro {
   max-width: 450px;
-  min-width: 100px;
   color: white;
   float: left;
   margin: 50px;
+  margin-left: 15%;
   padding: 50px;
 }
 
@@ -135,25 +139,34 @@ header .intro {
 }
 /* Secondary Content Styling*/
 
+.secondary-content p {
+  font-size: .80em;
+}
+
 .project9,
+.project8,
+.project7,
 .project6,
+.project5,
+.project4,
 .project3 {
-  border: solid grey 5px;
-  margin: auto;
+  align-items: center;
+  border: solid grey 2px;
+  margin: 3%;
   padding: 10px;
   line-height: 1.5;
   max-width: 25%;
-  float: left;
+  background-color: white;
+  display: inline-block;
 }
 
-.project8,
+/*.project8,
 .project5, {
   border: solid grey 5px;
   margin: auto;
   padding: 10px;
   line-height: 1.5;
   max-width: 25%;
-  float: center;
 }
 
 .project7,
@@ -163,8 +176,7 @@ header .intro {
   padding: 10px;
   line-height: 1.5;
   max-width: 25%;
-  float: right;
-}
+} */
 
 /* Main Footer Styling*/
 
