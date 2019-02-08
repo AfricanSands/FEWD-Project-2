@@ -49,6 +49,7 @@ h2 {
   font-size: .9em;
 }
 
+
 h4 {
 font-family: 'Marvel', 'Cousine', sans-serif;
   text-decoration: underline;
@@ -67,6 +68,7 @@ font-family: 'Marvel', 'Cousine', sans-serif;
   border-bottom: solid black 2px;
   margin-bottom: 5px;
   padding-top: 10px;
+  margin-top: 0;
 }
 
 .nav {
@@ -74,7 +76,7 @@ font-family: 'Marvel', 'Cousine', sans-serif;
   justify-content: space-around;
   font-weight: bold;
   list-style-type: none;
-  margin: 0 auto;
+  margin: 0 auto 5px;
   padding: 0;
 }
 
@@ -117,16 +119,6 @@ header {
   font-size: 1em;
 }
 
-/*.containerdiv {
-  background-color: black;
-  margin: 100px 5%;
-  border: solid white 3px;
-  width: 250px;
-  height: 200px;
-  position: relative fixed;
-  border-radius: 35px 3px 35px 3px;
-} */
-
 .containerdiv .profile-img {
   width: 150px;
   height: 150px;
@@ -145,8 +137,8 @@ header {
 header .intro {
   max-width: 430px;
   color: white;
-  margin: 5px;
-  padding: 5px;
+  margin: 10px auto;
+  padding: 15px;
   line-height: 1.1;
   position: relative fixed;
   display: block;
@@ -155,6 +147,11 @@ header .intro {
 
 
 /* Portfolio Styling*/
+
+.Portfolio {
+  border-bottom: solid black 2px;
+  margin: 10%;
+}
 
 .Portfolio p {
   font-size: .80em;
@@ -172,7 +169,7 @@ header .intro {
   display: block;
   max-height: 200px;
   overflow: scroll;
-  margin: 15px;
+  margin: 15px auto;
   align-items: center;
 }
 
@@ -186,10 +183,15 @@ header .intro {
 
 /* Experience Styling*/
 
+.experience {
+  border-bottom: solid black 2px;
+  margin: 10%;
+}
+
 .card {
-  margin: 30px;
+  margin: 15px auto;
   padding: 20px 40px 40px;
-  max-width: 300px;
+  max-width: 450px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -204,6 +206,11 @@ header .intro {
 }
 
 /* Contact Styling*/
+
+.contact {
+  border-bottom: solid black 2px;
+  margin: 10%;
+}
 
 .contact ul {
   list-style-type: none;
@@ -282,9 +289,7 @@ a.social:hover {
 
 /* Styles for larger screens */
 
-@media all (min-width: 480px)
-  and (max-width: 720px) {
-    }
+@media (min-width: 481px) and (max-width: 720px) {
   body {
     background: #f7f5f0;
     color: black;
@@ -296,3 +301,13 @@ a.social:hover {
     margin: 0;
   }
 }
+
+/*.containerdiv {
+  background-color: black;
+  margin: 100px 5%;
+  border: solid white 3px;
+  width: 250px;
+  height: 200px;
+  position: relative fixed;
+  border-radius: 35px 3px 35px 3px;
+} */
