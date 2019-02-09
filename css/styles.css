@@ -8,7 +8,7 @@
 body {
   font: normal 1em/1.2 normal;
   color: white;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background: firebrick;
   text-align: center;
   align-content: center;
@@ -37,7 +37,7 @@ h1 {
   padding: 80px 5px 15px;
   margin: 5px auto 5px;
   font-weight: bold;
-  font-family: 'Book Antiqua', serif;
+  font-family: 'Book Antiqua', Georgia, serif;
   text-align: center;
   color: black;
   font-size: 1.2em;
@@ -118,7 +118,7 @@ header {
 }
 
 header .intro {
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic' sans-serif;
   max-width: 410px;
   color: white;
   margin: 5px auto ;
@@ -208,63 +208,30 @@ header .intro {
 
 footer {
   background-color: firebrick;
-  min-height: 30px;
-  padding: 20px 0 40px 20px;
+  min-height: 70px;
+  padding: 20px 0 0 20px;
   font-size: .8em;
   text-align: center;
-  margin: auto;
-}
-
-footer .social {
-  float: left;
-  display: block;
-  list-style-type: none;
-  margin-right: 8%;
-  padding: 0;
+  margin-bottom: 0;
+  width: 100%;
 }
 
 footer .copyright {
-  top: -8px;
+  text-align: left;
   font-size: .65em;
-  display: inline;
-}
-
-footer .nav {
-  float: right;
-  display: block;
-  margin-right: auto;
-  margin-bottom: 10px;
-}
-
-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
- footer ul li {
-  display: block;
-}
-
-a.social {
   display: inline-block;
-  text-indent: -9999px;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
-  opacity: .4;
-  transition: all .5s;
+  float: left;
+  padding-left: 30px;
 }
 
-a.linkedin {
-  background-image: url(../images/linkedin.svg);
+.footer_mainnav {
+  display: none;
 }
-a.github {
-  background-image: url(../images/github.svg);
-}
-a.social:hover {
-  opacity: 1;
+
+.footer_mobilenav {
+  display: inline-block;
+  Float: right;
+  padding-right: 30px;
 }
 
 
@@ -312,6 +279,7 @@ a.social:hover {
     font: normal 1em/1.5 normal;
     border-left: solid firebrick 20px;
     border-right: solid firebrick 20px;
+    border-bottom: solid firebrick 20px;
     color: grey;
   }
   .container {
@@ -363,17 +331,29 @@ a.social:hover {
     font-size: 1.3em;
     line-height: 1.3;
   }
+  .footer_mainnav {
+    display: block;
+  }
+  .footer_mobilenav {
+    display: none;
+  }
   footer {
     font-size: 1em;
   }
-  footer .social {
-    margin-right: 25%;
-  }
+
   footer .copyright {
-    font-size: .85em;
-    margin: auto;
+    font-size: .95em;
+  }
+
+  footer .nav {
+    float: right;
+    display: block;
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-weight: bold;
   }
 }
+
 @media (min-width:1024px) {
   * {
   margin: 0;
@@ -463,6 +443,5 @@ a.social:hover {
   footer .copyright {
     top: -8px;
     font-size: .95em;
-    margin: auto;
   }
 }
