@@ -372,15 +372,10 @@ a.social:hover {
   }
   footer .copyright {
     top: -8px;
-    font-size: .75em;
+    font-size: .85em;
     margin: 30px 42% 5px;
     padding: 10px;
     text-align: center;
-  }
-  footer .nav {
-    float: right;
-    margin-right: auto;
-    margin-bottom: 10px;
   }
 }
 @media (min-width:1024px) {
@@ -398,11 +393,11 @@ a.social:hover {
     color: firebrick;
   }
   h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     color: black;
   }
   h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: black;
   }
   .nav-container {
@@ -412,14 +407,14 @@ a.social:hover {
   .nav {
     display: block;
     justify-content: space-around;
-    margin: 0 auto;
+    float: right;
+    margin-right: 30px;
   }
   .nav li {
-    text-align: right;
-    margin-right: 20px;
-    padding: 5px 10px 10px 15px;
-    font-size: 1em;
-    float: right;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.3em;
+    display: inline-block;
   }
   .name {
     margin: auto;
@@ -433,7 +428,7 @@ a.social:hover {
     text-align: left;
     background-color: firebrick;
     color: white;
-    min-height: 400px;
+    min-height: 430px;
     border-bottom: solid black 3px;
   }
   header .intro {
@@ -447,7 +442,7 @@ a.social:hover {
   }
   .containerdiv {
     background-color: black;
-    margin: 150px 150px 100px auto;
+    margin: 150px 18% 100px auto;
     border: solid white 3px;
     width: 250px;
     height: 200px;
@@ -481,10 +476,5 @@ a.social:hover {
     margin: 30px 42% 5px;
     padding: 10px;
     text-align: center;
-  }
-  footer .nav {
-    float: right;
-    margin-right: auto;
-    margin-bottom: 10px;
   }
 }
