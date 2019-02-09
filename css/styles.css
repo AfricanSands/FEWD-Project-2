@@ -62,9 +62,8 @@ h2 {
   position: fixed;
   color: black;
   border-bottom: solid black 2px;
-  margin-bottom: 5px;
+  margin:0 0 5px;
   padding-top: 10px;
-  margin-top: 0;
 }
 
 .nav {
@@ -188,7 +187,7 @@ header .intro {
 }
 
 .card:hover {
-  border-color: firebrick;
+  border-color: black;
 }
 
 /* Contact Styling*/
@@ -214,7 +213,7 @@ footer {
   min-height: 30px;
   padding: 20px 0 40px 20px;
   font-size: .8em;
-  text-align: right;
+  text-align: center;
   margin: auto;
 }
 
@@ -229,10 +228,8 @@ footer .social {
 footer .copyright {
   top: -8px;
   font-size: .65em;
-  margin: auto;
-  margin-left: 10px;
-  padding: 10px;
-  text-align: center;
+  margin: 15px auto;
+  padding: 100px 10px 20px;
 }
 
 footer .nav {
@@ -276,7 +273,7 @@ a.social:hover {
 
 /* Styles for larger screens */
 
-@media (min-width: 481px) and (max-width: 720px) {
+@media (min-width: 481px) {
   body {
     background: #f7f5f0;
     color: black;
@@ -305,62 +302,56 @@ a.social:hover {
     font-size: .85em;
     line-height: 1.3;
   }
+  .card:hover {
+    border-color: firebrick;
+  }
   .contact ul {
     margin-left: 25%;
   }
 }
 
-@media (min-width: 721px) and (max-width: 1023px) {
+@media (min-width: 768px) {
   * {
   margin: 0;
   }
   body {
-    background: #f7f5f0;
     font: normal 1em/1.5 normal;
     border-left: solid firebrick 20px;
     border-right: solid firebrick 20px;
     color: grey;
   }
-  a:hover {
-    color: firebrick;
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
   }
   h1 {
     font-size: 1.2em;
-    color: black;
   }
   h2 {
     font-size: 1.1em;
-    color: black;
-  }
-  .nav {
-    justify-content: space-around;
   }
   .nav li {
-    text-align: center;
-    margin: auto;
     padding: 5px 10px 10px;
     display: inline-block;
-  }
-  .containerdiv .profile-img {
-    float: right;
-    margin: 150px 10% 30px 0;
-  }
-  .containerdiv .profile-img:hover {
-    transform: scale(1.3);
   }
   header {
     min-height: 350px;
   }
+  .containerdiv .profile-img {
+    float: right;
+    margin: 120px 10% 30px 0;
+  }
+  .containerdiv .profile-img:hover {
+    transform: scale(1.3);
+  }
   header .intro {
-    font: normal 1em/1.5 normal;
     float: left;
     margin: 100px 0 30px 5%;
+    font-size: 1em;
+    line-height: 1.3;
   }
   .experience {
-    font-size: 1em;
-    line-height: 1.2;
-  }
-  .card {
     font-size: 1em;
     line-height: 1.3;
   }
@@ -371,11 +362,8 @@ a.social:hover {
     font-size: 1em;
   }
   footer .copyright {
-    top: -8px;
     font-size: .85em;
-    margin: 30px 42% 5px;
-    padding: 10px;
-    text-align: center;
+    margin: auto;
   }
 }
 @media (min-width:1024px) {
@@ -383,38 +371,30 @@ a.social:hover {
   margin: 0;
   }
   body {
-    background: #f7f5f0;
-    font: normal 1em/1.5 normal;
     border-left: solid firebrick 30px;
     border-right: solid firebrick 30px;
-    color: grey;
   }
   a:hover {
     color: firebrick;
   }
   h1 {
     font-size: 2em;
-    color: black;
   }
   h2 {
     font-size: 1.5em;
-    color: black;
   }
   .nav-container {
     min-height: 40px;
     padding: 10px;
   }
   .nav {
-    display: block;
     justify-content: space-around;
     float: right;
     margin-right: 30px;
   }
   .nav li {
-    margin: auto;
     padding: 10px;
     font-size: 1.3em;
-    display: inline-block;
   }
   .name {
     margin: auto;
@@ -426,23 +406,12 @@ a.social:hover {
   }
   header {
     text-align: left;
-    background-color: firebrick;
-    color: white;
     min-height: 430px;
     border-bottom: solid black 3px;
   }
-  header .intro {
-    max-width: 450px;
-    color: white;
-    margin: 110px auto 75px 75px;
-    padding: 20px;
-    font-size: 1.2em;
-    line-height: 1.5;
-    float: left;
-  }
   .containerdiv {
     background-color: black;
-    margin: 150px 18% 100px auto;
+    margin: 150px 10% 100px auto;
     border: solid white 3px;
     width: 250px;
     height: 200px;
@@ -450,19 +419,19 @@ a.social:hover {
     float: right;
   }
   .containerdiv .profile-img {
-    width: 150px;
-    height: 150px;
     margin: 25px 50px;
-    border-radius: 50%;
-    border: solid white 2px;
-    transition: all .5s;
   }
-  .containerdiv .profile-img:hover {
-    transform: scale(1.2);
+  header .intro {
+    max-width: 450px;
+    margin: 110px auto 75px 100px;
+    font-size: 1.2em;
+    line-height: 1.5;
   }
   .experience {
-    font-size: 1em;
     line-height: 1.4;
+  }
+  .card {
+    font-size: 1em;
   }
   .contact ul {
     margin-left: 40%;
@@ -473,8 +442,6 @@ a.social:hover {
   footer .copyright {
     top: -8px;
     font-size: .95em;
-    margin: 30px 42% 5px;
-    padding: 10px;
-    text-align: center;
+    margin: auto;
   }
 }
