@@ -34,9 +34,7 @@ a:visited {
 /* Heading Stylings */
 
 h1 {
-  padding: 5px;
-/*  border: solid firebrick 3px;
-  border-radius: 10px 2px 10px 2px; */
+  padding: 80px 5px 15px;
   margin: 5px auto 5px;
   font-weight: bold;
   font-family: 'Book Antiqua', serif;
@@ -46,7 +44,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Marvel', 'Cousine', sans-serif;
+  font-family: 'Book Antiqua', serif;
   text-decoration: underline;
   color: black;
   font-size: .85em;
@@ -120,10 +118,11 @@ header {
 }
 
 header .intro {
+  font-family: 'Century Gothic', sans-serif;
   max-width: 410px;
   color: white;
-  margin: 10px auto ;
-  padding: 20px;
+  margin: 5px auto ;
+  padding: 10px;
   line-height: 1.2;
   display: block;
   font-size: .90em;
@@ -135,7 +134,7 @@ header .intro {
 .Portfolio {
   border-bottom: solid black 2px;
   margin-top: 75px;
-  margin: 10%;
+  margin: 15px 3%;
 }
 
 .Portfolio p {
@@ -169,7 +168,7 @@ header .intro {
 /* Experience Styling*/
 
 .experience {
-  margin: 50px 10%;
+  margin: 15px 3%;
 }
 
 .card {
@@ -196,14 +195,13 @@ header .intro {
   border-top: solid black 2px;
   border-bottom: solid black 2px;
   padding-bottom: 10px;
-  margin: 5px 10% 40px;
+  margin: 5px auto 40px;
   text-align: center;
 }
 
 .contact ul {
   list-style-type: none;
-  text-align: left;
-  margin-left: 5%;
+  margin: 10px auto;
 }
 
 /* Main Footer Styling*/
@@ -221,15 +219,14 @@ footer .social {
   float: left;
   display: block;
   list-style-type: none;
-  margin-left: 0;
+  margin-right: 8%;
   padding: 0;
 }
 
 footer .copyright {
   top: -8px;
   font-size: .65em;
-  margin: 15px auto;
-  padding: 100px 10px 20px;
+  display: inline;
 }
 
 footer .nav {
@@ -305,9 +302,6 @@ a.social:hover {
   .card:hover {
     border-color: firebrick;
   }
-  .contact ul {
-    margin-left: 25%;
-  }
 }
 
 @media (min-width: 768px) {
@@ -321,15 +315,15 @@ a.social:hover {
     color: grey;
   }
   .container {
-    width: 80%;
-    max-width: 1000px;
+    width: 95%;
+    max-width: 1500px;
     margin: auto;
   }
   h1 {
-    font-size: 1.2em;
+    font-size: 1.7em;
   }
   h2 {
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
   .nav li {
     padding: 5px 10px 10px;
@@ -351,15 +345,29 @@ a.social:hover {
     font-size: 1em;
     line-height: 1.3;
   }
-  .experience {
-    font-size: 1em;
-    line-height: 1.3;
+  .project {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 400px;
+    max-height: 300px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
-  .contact ul {
-    margin-left: 25%;
+  .project p {
+    font-size: 1.2em;
+  }
+  .experience .card {
+    font-size: 1.3em;
+    line-height: 1.3;
   }
   footer {
     font-size: 1em;
+  }
+  footer .social {
+    margin-right: 25%;
   }
   footer .copyright {
     font-size: .85em;
@@ -378,10 +386,10 @@ a.social:hover {
     color: firebrick;
   }
   h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
   .nav-container {
     min-height: 40px;
@@ -406,7 +414,7 @@ a.social:hover {
   }
   header {
     text-align: left;
-    min-height: 430px;
+    min-height: 500px;
     border-bottom: solid black 3px;
   }
   .containerdiv {
@@ -422,19 +430,32 @@ a.social:hover {
     margin: 25px 50px;
   }
   header .intro {
-    max-width: 450px;
-    margin: 110px auto 75px 100px;
-    font-size: 1.2em;
+    max-width: 500px;
+    margin: 110px auto 75px 7.5%;
+    font-size: 1.4em;
     line-height: 1.5;
+  }
+  .project {
+    width: 27%;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 5px;
   }
   .experience {
     line-height: 1.4;
   }
   .card {
-    font-size: 1em;
-  }
-  .contact ul {
-    margin-left: 40%;
+    display: inline-block;
+    width: 40%;
+    padding-left: 30px;
+    padding-right: 30px;
+    vertical-align: top;
+    max-width: 600px;
+    min-width: 250px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   footer {
     font-size: 1.2em;
