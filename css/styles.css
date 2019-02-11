@@ -1,3 +1,10 @@
+/* web fonts*/
+
+@font-face {
+  font-family: 'Poster';
+src: url('../fonts/DAYPBL__.ttf') format('truetype');
+}
+
 /* global styling*/
 
 * {
@@ -66,6 +73,7 @@ h2 {
 
 .nav {
   display: block;
+  font-family: 'Poster', 'Franklin Gothic', 'Franklin Gothic Medium', Arial, sans-serif;
   justify-content: space-around;
   font-weight: bold;
   list-style-type: none;
@@ -102,7 +110,6 @@ header {
   border-bottom: solid black 2px;
   padding-top: 0;
   font-size: 1em;
-  min-height: 500px;
 }
 
 .containerdiv .profile-img {
@@ -118,7 +125,7 @@ header {
 }
 
 header .intro {
-  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic' sans-serif;
+  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
   max-width: 410px;
   color: white;
   margin: 5px auto ;
@@ -208,20 +215,27 @@ header .intro {
 
 footer {
   background-color: firebrick;
-  min-height: 70px;
-  padding: 20px 0 0 20px;
+  padding: 20px;
   font-size: .8em;
   text-align: center;
   margin-bottom: 0;
   width: 100%;
 }
 
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 footer .copyright {
   text-align: left;
   font-size: .65em;
-  display: inline-block;
   float: left;
   padding-left: 30px;
+  padding: 10px;
 }
 
 .footer_mainnav {
@@ -229,7 +243,6 @@ footer .copyright {
 }
 
 .footer_mobilenav {
-  display: inline-block;
   Float: right;
   padding-right: 30px;
 }
@@ -297,9 +310,6 @@ footer .copyright {
     padding: 5px 10px 10px;
     display: inline-block;
   }
-  header {
-    min-height: 350px;
-  }
   .containerdiv .profile-img {
     float: right;
     margin: 120px 10% 30px 0;
@@ -315,7 +325,7 @@ footer .copyright {
   }
   .project {
     display: inline-block;
-    width: 40%;
+    width: 45%;
     vertical-align: top;
     padding-left: 30px;
     padding-right: 30px;
@@ -394,7 +404,6 @@ footer .copyright {
   }
   header {
     text-align: left;
-    min-height: 500px;
     border-bottom: solid black 3px;
   }
   .containerdiv {
@@ -416,7 +425,7 @@ footer .copyright {
     line-height: 1.5;
   }
   .project {
-    width: 27%;
+    width: 29%;
     margin-right: 15px;
     margin-left: 15px;
     padding: 5px;
@@ -426,7 +435,7 @@ footer .copyright {
   }
   .card {
     display: inline-block;
-    width: 40%;
+    width: 45%;
     padding-left: 30px;
     padding-right: 30px;
     vertical-align: top;
