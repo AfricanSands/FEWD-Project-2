@@ -2,7 +2,11 @@
 
 @font-face {
   font-family: 'Poster';
-src: url('../fonts/DAYPBL__.ttf') format('truetype');
+src: url('../font/DAYPBL__.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'belligerent';
+src: url('../font/belligerent.ttf') format('truetype');
 }
 
 /* global styling*/
@@ -73,6 +77,7 @@ h2 {
 
 .nav {
   display: block;
+  letter-spacing: 3px;
   font-family: 'Poster', 'Franklin Gothic', 'Franklin Gothic Medium', Arial, sans-serif;
   justify-content: space-around;
   font-weight: bold;
@@ -125,7 +130,8 @@ header {
 }
 
 header .intro {
-  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+  font-family: 'belligerent', 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+  letter-spacing: 1.2px;
   max-width: 410px;
   color: white;
   margin: 5px auto ;
