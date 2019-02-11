@@ -75,6 +75,10 @@ h2 {
   padding-top: 10px;
 }
 
+nav .name {
+  font-style: oblique; 
+}
+
 .nav {
   display: block;
   letter-spacing: 3px;
@@ -164,8 +168,6 @@ header .intro {
   max-width: 300px;
   background-color: white;
   display: block;
-  max-height: 200px;
-  overflow: scroll;
   margin: 15px auto 50px;
   align-items: center;
 }
@@ -276,6 +278,7 @@ footer .copyright {
   .nav li {
     text-align: center;
     margin: auto;
+    padding: 5px;
   }
   header.intro {
     margin-top: 50px;
