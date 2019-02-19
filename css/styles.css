@@ -92,9 +92,9 @@ nav .name {
 .nav li {
   padding: 0;
   text-decoration: none;
-  line-height: 1;
+  line-height: 1.5;
   font-size: .8em;
-  text-align: right;
+  text-align: center;
   margin-right: 15px;
 }
 
@@ -277,7 +277,6 @@ footer .copyright {
   .nav li {
     text-align: center;
     margin: auto;
-    padding: 5px;
   }
   header.intro {
     margin-top: 50px;
