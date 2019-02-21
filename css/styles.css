@@ -48,14 +48,14 @@ h1 {
   padding: 80px 5px 15px;
   margin: 5px auto 5px;
   font-weight: bold;
-  font-family: 'Book Antiqua', Georgia, serif;
+  font-family: 'Quattrocento', 'Book Antiqua', serif;
   text-align: center;
   color: black;
   font-size: 1.2em;
 }
 
 h2 {
-  font-family: 'Book Antiqua', serif;
+  font-family: 'Cinzel', 'Book Antiqua', serif;
   text-decoration: underline;
   color: black;
   font-size: .85em;
